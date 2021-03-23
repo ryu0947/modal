@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>jQueryでTOPへ戻るボタン</title>
+    <title>JavaScriptでモーダル</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="title">jQuery</h1>
+      <h1 class="title">JavaScript</h1>
       <button id="js-hamburger" class="hamburger">
         <span id="js-top-line" class="top-line"></span>
         <span id="js-center-line" class="center-line"></span>
@@ -16,12 +16,17 @@
       </button>
     </header>
     <div class="modal">
-        <div class="modal-container">
-            <p class="modal-text">モーダルです。</p>
-            <button id="js-close" class="close">閉じる</button>
+      <div class="modal-container">
+        <div class="modal-inner">
+          <h1 class="modal-title">モーダルです。</h1>
+          <p class="modal-text">テキストテキストテキストテキストテキスト</p>
+          <button id="js-close" class="modal-close">閉じる</button>
         </div>
+      </div>
     </div>
-    <button id="js-open" class="open">クリック！</button>
+    <div class="modal-btn">
+      <button id="js-open" class="modal-open">モーダルを開く</button>
+    </div>
     <script src="js/top-btn2.js"></script>
   </body>
 </html>
